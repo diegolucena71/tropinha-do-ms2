@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App Avançado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Chat App Avançado</h1>
+    </header>
+    <div id="container">
+        <div id="salas">
+            <h3>Salas Disponíveis:</h3>
+            <ul id="sala-list">
+                <li onclick="selectRoom('Sala 1')">Sala 1</li>
+                <li onclick="selectRoom('Sala 2')">Sala 2</li>
+                <li onclick="selectRoom('Sala 3')">Sala 3</li>
+            </ul>
+        </div>
+        <div id="conversa">
+            <h3 id="room-title">Mensagens da Sala</h3>
+            <div id="messages"></div>
+            <div id="input">
+                <input type="text" id="messageInput" placeholder="Digite sua mensagem aqui..." />
+                <button onclick="sendMessage()">Enviar</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
